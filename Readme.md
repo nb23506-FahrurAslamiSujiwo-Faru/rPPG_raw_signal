@@ -22,5 +22,23 @@ Remote Photoplethysmography (rPPG) · Signal Filter · Skin Tone · Heart Rate �
 ## Dataset & Preprocessing
 - Facial video data recorded using webcam.
 - Finger-tip PPG data used as ground truth.
-- Face detection and signa
+- Face detection and signal extraction via ROI on each frame.
+- Applied filters: Butterworth, Chebyshev1, Elliptic.
 
+## Results
+| Filter      | RMSE  | SNR   |
+|-------------|-------|-------|
+| Elliptic    | 1.751 | 5.536 |
+| Chebyshev1  | 1.768 | 3.066 |
+| Butterworth | 3.411 | 1.699 |
+
+## Citation
+```bibtex
+@article{aslami202Xfilter,
+  title={Investigating the Effectiveness of Filter in rPPG Methods Across Various Skin Tones},
+  author={Aslami, Fahrur and Sripian, Peeraya},
+  journal={Journal of [TBD]},
+  year={20XX},
+  publisher={J-STAGE},
+  note={Advance online publication}
+}
